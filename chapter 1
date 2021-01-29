@@ -13,5 +13,6 @@ printf("请输入三个整数：");
 scanf("%d,%d,%d",&a,&b,&c);
 max=big(a,b);
 max=big(c,max);
+printf("%d,%d,%d,中的最大数是%d\n",a,b,c,max);
 return 0;
 }
