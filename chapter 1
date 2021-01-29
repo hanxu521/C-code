@@ -1,1 +1,17 @@
-
+#include<stdio.h>//输入三个数，输出其中最大的数；
+int big(int x,int y)
+{
+int z=x;
+if(y>z)
+z=y;
+return z;
+}
+int main()
+{
+int a,b,c,max;
+printf("请输入三个整数：");
+scanf("%d,%d,%d",&a,&b,&c);
+max=big(a,b);
+max=big(c,max);
+return 0;
+}
